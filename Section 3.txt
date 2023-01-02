@@ -1,0 +1,92 @@
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git checkout -b js-assignments
+Switched to a new branch 'js-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git commit -m"4th commit"
+[js-assignments cd7ec24] 4th commit
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git commit -m"commiting 6th"
+On branch js-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git switch master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git commit -m"8th committing"
+On branch master
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git switch js-assignments
+Switched to branch 'js-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git commit -m"11th committing"
+[js-assignments f203f18] 11th committing
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (js-assignments)
+$ git switch master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git merge js-assignments
+Updating 7bf8f31..f203f18
+Fast-forward
+ README.txt | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git branch --delete js-assignments
+Deleted branch js-assignments (was f203f18).
