@@ -1,0 +1,145 @@
+NIKAKADE@LIN24008241 MINGW64 ~ (html-assignments)
+$ cd test
+
+NIKAKADE@LIN24008241 MINGW64 ~/test (master)
+$ cd project_dir
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir (master)
+$ cd assignments
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ cd README.txt
+bash: cd: README.txt: Not a directory
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ touch README.txt
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git commit -m"assignment committed"
+On branch html-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git branch html-assignments
+fatal: a branch named 'html-assignments' already exists
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git switch html-assignments
+Already on 'html-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git commit -m "28th again committing"
+[html-assignments 3fce383] 28th again committing
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git commit -m"30th committing the file"
+[html-assignments 6b5442a] 30th committing the file
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git commit -m"32th commit"
+On branch master
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git branch --delete html-assignments
+error: The branch 'html-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D html-assignments'.
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git merge html-assignments
+Updating 4bbf19d..6b5442a
+Fast-forward
+ index.html | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 index.html
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git branch --delete html-assignments
+Deleted branch html-assignments (was 6b5442a).
