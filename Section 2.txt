@@ -1,0 +1,141 @@
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git checkout -b css-assignments
+Switched to a new branch 'css-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git commit -m"4th committing"
+On branch css-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git checkout master README.txt index.html
+Updated 0 paths from b9569a3
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+M       README.txt
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git checkout  css-assignments
+Switched to branch 'css-assignments'
+M       README.txt
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git commit -m"commiting"
+[css-assignments acd5f53] commiting
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git commit -m "6th commiting"
+On branch css-assignments
+nothing to commit, working tree clean
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git status
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git commit -m"committing changes"
+[css-assignments d493c2d] committing changes
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git switch css-assignments
+Switched to branch 'css-assignments'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git add .
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git commit -m"11th committing"
+[css-assignments 7bf8f31] 11th committing
+ Committer: Kakade <nisha.kakade@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (css-assignments)
+$ git switch master
+Switched to branch 'master'
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git merge css-assignments
+Updating 6b5442a..7bf8f31
+Fast-forward
+ README.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+NIKAKADE@LIN24008241 MINGW64 ~/test/project_dir/assignments (master)
+$ git branch --delete css-assignments
+Deleted branch css-assignments (was 7bf8f31).
